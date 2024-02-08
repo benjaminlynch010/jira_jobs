@@ -7,3 +7,16 @@ CREATE TABLE "user" (
     "username" VARCHAR (80) UNIQUE NOT NULL,
     "password" VARCHAR (1000) NOT NULL
 );
+
+CREATE TABLE "jobs" (
+    "id" SERIAL PRIMARY KEY,
+    "user_id" INTEGER NOT NULL,
+    "date" DATE NOT NULL,
+    "title" VARCHAR (255) NOT NULL,
+    "company" VARCHAR (255) NOT NULL,
+    "description" TEXT,
+    "source" VARCHAR (1000) NOT NULL,
+    "status" VARCHAR (80) NOT NULL,
+    "priority" INTEGER NOT NULL,
+    "notes" TEXT,
+);
