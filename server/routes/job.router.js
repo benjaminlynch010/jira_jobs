@@ -14,17 +14,18 @@ router.post('/', (req, res) => {
 
 router.put('/', (req, res) => {
     // route to edit job listing
-})
+});
 
 router.put('/', (req, res) => {
     // route to change status when drag and drop occurs
-})
+    // interested | applied | interviewing 
+});
 
 router.put('/', (req, res) => {
-    // route to change priority
-})
+    // route to change priority (int 1-3)
+});
 
 router.delete('/', (req, res) => {
     // route to delete job listing
-})
+});
 module.exports = router;
